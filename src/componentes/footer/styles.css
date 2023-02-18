@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  hr{
+    width: 100%;
+  }
+   li{
+    list-style: none;
+    padding: 1em;
+    text-decoration: none;
+  }
+  .linkFooter{
+    text-decoration: none;
+    color: black;
+  }
+
+  

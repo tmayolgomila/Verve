@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+  .tendencias{
+    text-align: left;
+    margin: 0.5em;
+    margin-bottom: 2em;
+  }
+  #trends{
+    text-decoration: none;
+    margin: 1em;
+    color: black;
+  }
+  #videoPresentacion{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.3em;
+  }
+  .divImgPortada{
+    position: relative;
+    width: 100%;
+  }
+  #imagenPortada{
+    width: 90%;
+  }
+  @media only screen and (max-width: 480px) {
+    #imagenPortada {
+      width: 100%;
+    }
+  }
+
+  #botonFoto {
+    font-size: 28px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border:none;
+    background: black;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #botonFoto:focus,
+  #botonFoto:hover {
+    color: #fff;
+  }
+  
+  #botonFoto:focus:after,
+  #botonFoto:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  #botonFoto:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  .tituloFoto{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: wheat;
+  }
+  @media screen and (max-width: 600px) {
+    .tituloFoto{
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px, solid, black;
+      background: wheat;
+    }
+  }

@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { Navbar } from './componentes/navbar';
+import { Home } from './componentes/home/home';
+import { Footer } from './componentes/footer';
+import { Women } from './componentes/women';
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
+  const basename = process.env.BASENAME || "";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter basename={basename}>
+    <Navbar/>
+    <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/women" element={<Women/>}/>
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
     </div>
   );
 }
