@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+  .tendencias{
+    text-align: left;
+    margin: 0.5em;
+    margin-bottom: 2em;
+  }
+  #trends{
+    text-decoration: none;
+    margin: 1em;
+    color: black;
+  }
+  #videoPresentacion{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.3em;
+  }
+

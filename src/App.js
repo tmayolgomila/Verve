@@ -1,7 +1,7 @@
-import { Navbar } from './componentes/navbar';
-import { Home } from './componentes/home/home';
-import { Footer } from './componentes/footer';
-import { Women } from './componentes/women';
+import { Navbar } from './pages/navbar';
+import { Home } from './pages/home/home';
+import { Footer } from './pages/footer';
+import { Women } from './pages/women';
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
