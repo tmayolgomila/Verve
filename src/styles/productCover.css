@@ -6,9 +6,7 @@
     width: 100%;
   }
   @media only screen and (max-width: 480px) {
-    #imagenPortada {
-      width: 100%;
-    }
+
   }
 
   #botonFoto {
