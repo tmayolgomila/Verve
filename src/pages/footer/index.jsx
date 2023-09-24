@@ -7,9 +7,13 @@ export const Footer = () => {
     <>
     <div className='footer'>
     <Link className='linkFooter' ><li>NEWSLETTER</li></Link>  
+    <hr/>
     <Link className='linkFooter' ><li>THE COMPANY</li></Link> 
+    <hr/>
     <Link className='linkFooter' ><li>WORK WITH US</li></Link> 
+    <hr/>
     <Link className='linkFooter' ><li>BOUTIQUES</li></Link> 
+    <hr/>
     <Link className='linkFooter' ><li>CONTACT US</li></Link> 
    </div>
    <hr/>
