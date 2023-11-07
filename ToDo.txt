@@ -1,0 +1,5 @@
+Tenemos hecha la página principal,
+ ahora debemos rellenar el componente de la carta para la galeria y hacer unas cuantas galerías 
+ para que el cliente pueda navegar por la página.
+ Realizar un carrito de la compra.
+ Un método de pago.
