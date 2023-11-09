@@ -6,6 +6,17 @@ export const Women = () => {
     
     <div className="gallery">
         <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
+        <GalleryCard/>
     </div>
 
   )
