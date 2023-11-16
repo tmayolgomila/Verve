@@ -1,22 +1,34 @@
 .containerGalleryCard {
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .titleGalleryCard {
-    margin: 0.5em 0;
-    position: absolute;
-    color: white;
-  }
-  
-  .buttonGalleryCard {
-    background-color: #3498db;
-    color: #fff;
-    padding: 0.5em;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-  }
+  position: relative;
+  overflow: hidden;
+}
 
-  
+.imgGalleryCard {
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Hace que la altura se ajuste proporcionalmente al ancho */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+}
+
+.titleGalleryCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0; /* Elimina el margen predeterminado del h4 */
+  color: white;
+  text-align: center; /* Centra el texto horizontalmente */
+  background: rgba(0, 0, 0, 0.5); /* Agrega un fondo semitransparente */
+  padding: 10px; /* Añade algún espacio interno para mayor legibilidad */
+}
+
+.buttonGalleryCard {
+  position: absolute;
+  bottom: 10px; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: wheat;
+  color: black;
+  padding: 0.5em 1em; /* Ajusta según sea necesario */
+  border: none;
+  cursor: pointer;
+}
