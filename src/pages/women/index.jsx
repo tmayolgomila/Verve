@@ -17,6 +17,10 @@ export const Women = () => {
           <GalleryCard galleryImg={Impro3} galleryTitle="triangle title" galleryButton="Add to cart" />
           <GalleryCard galleryImg={Impro1} galleryTitle="gallery title" galleryButton="Add to cart" />
           <GalleryCard galleryImg={Impro3} galleryTitle="user worker title" galleryButton="Add to cart" />
+          <GalleryCard galleryImg={Impro1} galleryTitle="user captain" galleryButton="Add to cart" />
+          <GalleryCard galleryImg={Impro3} galleryTitle="triangle title" galleryButton="Add to cart" />
+          <GalleryCard galleryImg={Impro1} galleryTitle="gallery title" galleryButton="Add to cart" />
+          <GalleryCard galleryImg={Impro3} galleryTitle="user worker title" galleryButton="Add to cart" />
       </div>
     </div>
 

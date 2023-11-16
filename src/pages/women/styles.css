@@ -13,7 +13,7 @@
   
     /* Para pantallas pequeñas (2 cards en una fila) */
     @media (max-width: 800px) {
-      grid-template-columns: repeat(2, minmax(30rem, 1fr));
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
     }
   
     /* Para pantallas muy pequeñas (1 card en una fila) */

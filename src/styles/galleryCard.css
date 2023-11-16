@@ -31,4 +31,16 @@
   padding: 0.5em 1em; /* Ajusta según sea necesario */
   border: none;
   cursor: pointer;
+  border-radius: 1em;
+  font-weight: 700;
+  transition: background 0.5s ease;
+}
+
+.buttonGalleryCard:hover {
+  background: linear-gradient(to right, wheat 10%, rgb(146, 132, 105) 50%); 
+
+}
+
+.buttonGalleryCard:active {
+  background: black;
 }
