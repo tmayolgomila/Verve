@@ -13,7 +13,7 @@
     font-size: 17px;
   }
   
-  #carroCompra{
+  #shoppingCart{
     float: right;
     zoom: 1.5;
     margin-right: 0.2em;
@@ -29,7 +29,7 @@
       display:block;
       cursor: pointer;
     }
-    #carroCompra{
+    #shoppingCart{
         float: left;
         border: none;
       }

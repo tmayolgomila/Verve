@@ -16,16 +16,16 @@ export const Navbar = () => {
   return (
     <div className="topnav" id='myTopnav'>
     <Link to='/' id="tituloVerve">VERVE</Link>
-    <Link to='/women'>Women</Link>
-    <Link to='#'>Men</Link>
-    <Link to='#'>Caps</Link>
-    <Link to='#'>Handbags</Link>
-    <Link to='#'>Gifts</Link>
-    <Link to='#'>Discover</Link>
+    <Link to='/women' onClick={myFunction}>Women</Link>
+    <Link to='#' onClick={myFunction}>Men</Link>
+    <Link to='#' onClick={myFunction}>Caps</Link>
+    <Link to='#' onClick={myFunction}>Handbags</Link>
+    <Link to='#' onClick={myFunction}>Gifts</Link>
+    <Link to='#' onClick={myFunction}>Discover</Link>
     <a className='icon' onClick={myFunction}>
       <i id="iconoMenu" className="fa fa-bars"></i>
     </a>
-    <Link to='#' id="carroCompra"><ion-icon name="cart-outline"></ion-icon></Link>
+    <Link to='/shoppingCart' id="shoppingCart" onClick={myFunction}><ion-icon name="cart-outline"></ion-icon></Link>
   </div>
   )
 }
