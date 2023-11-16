@@ -18,7 +18,7 @@ export const Footer = () => {
    </div>
    <hr/>
    <br/>
-   <i className="fa fa-copyright"></i> 2023 VERVE
+   <i className="fa fa-copyright"></i> 2024 VERVE
    <br/>
    </>
   )

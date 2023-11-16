@@ -17,11 +17,11 @@ export const Navbar = () => {
     <div className="topnav" id='myTopnav'>
     <Link to='/' id="tituloVerve">VERVE</Link>
     <Link to='/women' onClick={myFunction}>Women</Link>
-    <Link to='#' onClick={myFunction}>Men</Link>
-    <Link to='#' onClick={myFunction}>Caps</Link>
-    <Link to='#' onClick={myFunction}>Handbags</Link>
-    <Link to='#' onClick={myFunction}>Gifts</Link>
-    <Link to='#' onClick={myFunction}>Discover</Link>
+    <Link to='/men' onClick={myFunction}>Men</Link>
+    <Link to='/caps' onClick={myFunction}>Caps</Link>
+    <Link to='/handbags' onClick={myFunction}>Handbags</Link>
+    <Link to='/gifts' onClick={myFunction}>Gifts</Link>
+    <Link to='/discover' onClick={myFunction}>Discover</Link>
     <a className='icon' onClick={myFunction}>
       <i id="iconoMenu" className="fa fa-bars"></i>
     </a>

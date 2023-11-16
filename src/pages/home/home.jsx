@@ -23,7 +23,7 @@ export const Home = () => {
       </div>
       <div className="tendencias">
         <Link id="trends">New Arrrivals</Link>
-        <Link id="trends">Season 23</Link>
+        <Link id="trends">Season 24</Link>
         <Link id="trends">Our Selection</Link>
       </div>
 

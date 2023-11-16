@@ -1,0 +1,24 @@
+.gallery {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+  
+    /* Para pantallas grandes (4 cards en una fila) */
+    grid-template-columns: repeat(4, minmax(15rem, 1fr));
+  
+    /* Para pantallas medianas (3 cards en una fila) */
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    }
+  
+    /* Para pantallas pequeñas (2 cards en una fila) */
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    }
+  
+    /* Para pantallas muy pequeñas (1 card en una fila) */
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }
+  }
+  

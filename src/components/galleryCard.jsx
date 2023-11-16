@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 
 const GalleryCard = ({galleryImg,galleryTitle, galleryButton, onClick }) => {
   const handleClick = () => {
-    toast('Added to your cart')
+    toast.success('Added to your cart')
     onClick();
   };
 
