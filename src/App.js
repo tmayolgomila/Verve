@@ -32,7 +32,7 @@ function App() {
           />
           <Route
             path="/shoppingCart"
-            element={<Cart cartItems={cartItems} />}
+            element={<Cart cartItems={cartItems} setCartItems={setCartItems} />}
           />
         </Routes>
         <Footer />

@@ -2,8 +2,11 @@
 import React from "react";
 import "./styles.css";
 
-const Cart = ({ cartItems }) => {
-    console.log(cartItems)
+const Cart = ({ cartItems, setCartItems }) => {
+    const handleRemoveItem = (itemId) => {
+        const updatedCart = cartItems.filter((item) => item.id !== itemId);
+        setCartItems(updatedCart)
+    }
   return (
     <div className="cartContainer">
     <h1>Shopping Cart</h1>
@@ -16,7 +19,7 @@ const Cart = ({ cartItems }) => {
               <span>{item.title}</span>
               <span className="itemPrice">{item.price}</span>
             </div>
-            <button className="removeButton">
+            <button className="removeButton" onClick={()=>handleRemoveItem(item.id)}>
             <ion-icon name="close-outline"></ion-icon>
               </button>
           </div>
