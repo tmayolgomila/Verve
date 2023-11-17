@@ -10,9 +10,9 @@ import Impro3 from "../../img/impro3.webp"
   return (
     <div className="galleryContainer">
       <div className="gallery">
-          <GalleryCard galleryImg={Impro1} galleryTitle="women" galleryButton="Add to cart" onClick={()=>addToCart({id: 1, title: "women", price:59.99, image: Impro1})}/>
-          <GalleryCard galleryImg={Impro3} galleryTitle="screen cleaner title" galleryButton="Add to cart" onClick={()=>addToCart({id: 2, title: "screen cleaner title", price:59.99, image: Impro1})} />
-          <GalleryCard galleryImg={Impro1} galleryTitle="single line title" galleryButton="Add to cart" onClick={()=>addToCart({id: 3, title: "single line title" , price:59.99, image: Impro1})} />
+          <GalleryCard galleryImg={Impro1} galleryTitle="women" galleryButton="Add to cart" onClick={()=>addToCart({id: 1, title: "women", price:2, image: Impro1})}/>
+          <GalleryCard galleryImg={Impro3} galleryTitle="screen cleaner title" galleryButton="Add to cart" onClick={()=>addToCart({id: 2, title: "screen cleaner title", price:2, image: Impro1})} />
+          <GalleryCard galleryImg={Impro1} galleryTitle="single line title" galleryButton="Add to cart" onClick={()=>addToCart({id: 3, title: "single line title" , price:2, image: Impro1})} />
           <GalleryCard galleryImg={Impro3} galleryTitle="tanks title" galleryButton="Add to cart" onClick={()=>addToCart({id: 4, title: "tanks title" , price:59.99, image: Impro1})} />
           <GalleryCard galleryImg={Impro1} galleryTitle="user captain" galleryButton="Add to cart" onClick={()=>addToCart({id: 5, title: "user captain" , price:59.99, image: Impro1})} />
           <GalleryCard galleryImg={Impro3} galleryTitle="triangle title" galleryButton="Add to cart" onClick={()=>addToCart({id: 6, title: "triangle title" , price:59.99, image: Impro1})} />
