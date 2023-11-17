@@ -3,10 +3,12 @@ import React from "react";
 import "./styles.css";
 
 const Cart = ({ cartItems, setCartItems }) => {
+  
     const handleRemoveItem = (itemId) => {
         const updatedCart = cartItems.filter((item) => item.id !== itemId);
         setCartItems(updatedCart)
     }
+    
   return (
     <div className="cartContainer">
     <h1>Shopping Cart</h1>

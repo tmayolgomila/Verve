@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 import { Link } from 'react-router-dom'
 
-export const Navbar = () => {
+export const Navbar = ({ cartItems }) => {
     function myFunction() {
         var x = document.getElementById("myTopnav");
         if(x){
@@ -14,6 +14,7 @@ export const Navbar = () => {
         }
       }
   return (
+
     <div className="topnav" id='myTopnav'>
     <Link to='/' id="tituloVerve">VERVE</Link>
     <Link to='/women' onClick={myFunction}>Women</Link>
@@ -25,7 +26,14 @@ export const Navbar = () => {
     <a className='icon' onClick={myFunction}>
       <i id="iconoMenu" className="fa fa-bars"></i>
     </a>
-    <Link to='/shoppingCart' id="shoppingCart" onClick={myFunction}><ion-icon name="cart-outline"></ion-icon></Link>
+    <Link to='/shoppingCart' id="shoppingCart" onClick={myFunction}>
+      <ion-icon name="cart-outline"></ion-icon>
+      <div className='countContainer'>
+        <span className="cartItemCount">{cartItems.length}</span>
+      </div>
+      
+    </Link>
   </div>
+  
   )
 }

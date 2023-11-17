@@ -1,7 +1,10 @@
-.topnav{
+  
+    @media screen and (min-width: 600px) {
+  .topnav{
     float: left;
     display: block;
-}
+    margin-top: 1em;
+  }
 
   .topnav a {
     float: left;
@@ -16,12 +19,29 @@
   #shoppingCart{
     float: right;
     zoom: 1.5;
-    margin-right: 0.2em;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+    margin-top:-0.5em
   }
   .topnav .icon {
     display: none;
   }
-
+  .cartItemCount{
+    display: inline-block;
+    line-height: 1; 
+  }
+  .countContainer{
+    border-radius: 50%;
+    width: 30px; /* Reducir el ancho para que sea más compacto */
+    height: 30px; /* Reducir la altura para que sea más compacto */
+    background: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5em;
+  }
+    }
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -29,10 +49,42 @@
       display:block;
       cursor: pointer;
     }
-    #shoppingCart{
-        float: left;
-        border: none;
-      }
+  
+  .topnav{
+    float: left;
+    display: block;
+    margin-top: 1em;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #shoppingCart{
+    border: none;
+position: relative;
+  }
+  .topnav .icon {
+    display: none;
+  }
+  .countContainer{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: wheat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.5em;
+    text-align: center;
+    line-height: 30px;
+  }
   }
   
   @media screen and (max-width: 600px) {
@@ -58,3 +110,4 @@
  #iconoMenu{
     color: black;
   }
+
