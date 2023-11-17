@@ -23,17 +23,26 @@ export const Navbar = ({ cartItems }) => {
     <Link to='/handbags' onClick={myFunction}>Handbags</Link>
     <Link to='/gifts' onClick={myFunction}>Gifts</Link>
     <Link to='/discover' onClick={myFunction}>Discover</Link>
+
     <a className='icon' onClick={myFunction}>
       <i id="iconoMenu" className="fa fa-bars"></i>
     </a>
+    
     <Link to='/shoppingCart' id="shoppingCart" onClick={myFunction}>
+
       <ion-icon name="cart-outline"></ion-icon>
+
       <div className='countContainer'>
         <span className="cartItemCount">{cartItems.length}</span>
       </div>
-      
+
     </Link>
   </div>
   
   )
 }
+
+
+
+
+

@@ -8,22 +8,37 @@ const Cart = ({ cartItems, setCartItems }) => {
         const updatedCart = cartItems.filter((item) => item.id !== itemId);
         setCartItems(updatedCart)
     }
+
+    const countItemUnits = (itemId) => {
+      return cartItems.reduce ((count, item) => (item.id === itemId ? count + 1 : count), 0 )
+    }
     
   return (
     <div className="cartContainer">
     <h1>Shopping Cart</h1>
     <ul className="cartList">
-      {cartItems.map((item) => (
-        <li key={item.id}>
+      {cartItems.reduce((uniqueItems, item) => {
+        // Verificar si el artículo ya está en la lista única
+        if (!uniqueItems.find((uniqueItem) => uniqueItem.id === item.id)) {
+          uniqueItems.push(item);
+        }
+        return uniqueItems;
+      }, []).map((uniqueItem) => (
+        <li key={uniqueItem.id}>
           <div className="cartItemContent">
-            <img src={item.image} alt={item.title} className="cartItemImage" />
+            <img src={uniqueItem.image} alt={uniqueItem.title} className="cartItemImage" />
             <div className="itemInfo">
-              <span>{item.title}</span>
-              <span className="itemPrice">{item.price}</span>
+              <span>{uniqueItem.title}</span>
+              <span className="itemPrice">
+                {`${uniqueItem.price} x ${countItemUnits(uniqueItem.id)}`}
+              </span>
             </div>
-            <button className="removeButton" onClick={()=>handleRemoveItem(item.id)}>
-            <ion-icon name="close-outline"></ion-icon>
-              </button>
+            <button
+              className="removeButton"
+              onClick={() => handleRemoveItem(uniqueItem.id)}
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
           </div>
           <hr />
         </li>
